@@ -1,0 +1,33 @@
+.hamburger {
+  position: absolute;
+  display: block;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 12px;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  margin-bottom: 7px;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+
+.hamburger__active span:first-child {
+  transform: translateY(3px) rotate(-45deg);
+  border-radius: 3px;
+}
+
+.hamburger__active span:last-child {
+  transform: translateY(3px) rotate(45deg);
+  border-radius: 3px;
+}
+
+
+.hamburger__active span {
+  margin-bottom: -2px;
+  border-radius: 3px;
+}

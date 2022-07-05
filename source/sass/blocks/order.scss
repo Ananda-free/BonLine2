@@ -1,0 +1,112 @@
+.order {
+  margin-bottom: 62px;
+
+  &__wrapper {
+    height: 921px;
+    background: linear-gradient(321.91deg, rgba(213, 209, 202, 0.31) 97.07%, rgba(226, 223, 217, 0) 114.08%);
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__pic {
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .9;
+
+  }
+
+  &__title {
+    padding-top: 359px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 73px;
+    text-align: center;
+
+    color: var(--color-a);
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    span:first-child {
+      color: var(--bg-color-f);
+    }
+  }
+
+  &__btn-inner {
+    position: absolute;
+    display: flex;
+    grid-gap: 25px;
+    max-width: 1440px;
+    width: 770px;
+    height: 66px;
+    margin-left: 361px;
+
+    margin-top: 210px;
+  }
+
+  &__btn-count {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    grid-gap: 19px;
+    width: 370px;
+    height: 66px;
+    background: var(--color-a);
+    box-shadow: 0px 0px 4px var(--color-a);
+    border-radius: 10px;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #D5D1CA;
+  }
+
+  &__btn-call {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    position: relative;
+
+    width: 370px;
+    height: 66px;
+
+    background: #FFC330;
+    box-shadow: 0px 0px 4px #FFFFFF;
+    border-radius: 10px;
+
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: var(--color-a);
+
+    picture:first-child {
+      position: absolute;
+      left: 29px;
+    }
+
+  }
+}

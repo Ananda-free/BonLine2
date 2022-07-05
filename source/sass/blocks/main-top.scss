@@ -1,0 +1,16 @@
+.main-top {
+
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  /* identical to box height */
+
+
+  background: linear-gradient(180deg, #FFC330 0%, #FFC330 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  // text-fill-color: transparent;
+}

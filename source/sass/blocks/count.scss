@@ -1,0 +1,129 @@
+.count {
+
+  margin-bottom: 100px;
+
+
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+    grid-gap: 75px;
+    padding-top: 126px;
+    padding-left: 95px;
+    height: 1028px;
+
+    background: linear-gradient(179.2deg, rgba(131, 120, 94, 0.42) 14.12%, rgba(243, 235, 217, 0.42) 107.05%);
+    border-radius: 10px;
+  }
+
+
+
+  &__left {
+    display: grid;
+    grid-template-columns: 236px 1fr;
+    grid-gap: 30px;
+    grid-template-areas:
+    "img4 img4"
+    "img5 img6";
+  }
+
+  &__img4 {
+    grid-area: img4;
+  }
+
+  &__img5 {
+    grid-area: img5;
+  }
+
+  &__img6 {
+    grid-area: img6;
+  }
+
+  &__right {
+
+    margin-right: 95px;
+    background: #FFFFFF;
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 15px;
+  }
+  &__form-title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    padding: 45px 143px 62px;
+    /* identical to box height */
+
+
+    color: var(--bg-color-f);
+  }
+
+  &__form-top {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+
+    margin: 0 36px;
+  }
+  &__form-fieldset {
+    padding: 22px;
+    width: clamp(300px, 37.292vwpx, 537px);
+    height: 66px;
+
+    border: var(--color-d) solid 2px;
+
+
+    background: var(--color-a);
+    box-shadow: 0px 0px 4px var(--color-a);
+    border-radius: 10px;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: var(--color-d);
+
+    input{
+      &::placeholder {
+        color: red;
+      }
+    }
+  }
+
+  &__form-textarea {
+
+    min-height: 200px;
+  }
+
+
+}
+
+textarea {
+
+    padding-top: 22px;
+    padding-left: 22px;
+
+    resize: none;
+    outline: none;
+    border: none;
+    min-height: 160px;
+    width: 100%;
+    background: var(--color-a);
+    box-shadow: 0px 0px 4px var(--color-a);
+    border-radius: 10px;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: var(--color-d);
+}
+
