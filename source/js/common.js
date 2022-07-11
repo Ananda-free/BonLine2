@@ -1,13 +1,5 @@
-import Select from "./select.js"
 
-const selectElements = document.querySelectorAll("[data-custom]")
-
-selectElements.forEach(selectElement => {
-  new Select(selectElement)
-})
-
-
-let indexFirstSlider = new Swiper(".index-first__bg", {
+let mainSlider = new Swiper(".index-first__swiper", {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
@@ -16,13 +8,27 @@ let indexFirstSlider = new Swiper(".index-first__bg", {
   //   delay: 0,
   // },
   pagination: {
-        el: ".swiper-pagination",
+        el: ".index-first__pagination",
       },
   // navigation: {
   //   nextEl: ".other-games__next",
   //   prevEl: ".other-games__prev",
-  },
+  }
 );
+
+
+
+
+
+// import Select from "./select.js"
+
+// const selectElements = document.querySelectorAll("[data-custom]")
+
+// selectElements.forEach(selectElement => {
+//   new Select(selectElement)
+// })
+
+
 
 
 
