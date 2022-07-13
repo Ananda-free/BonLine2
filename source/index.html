@@ -8,7 +8,9 @@
 
       <section class="index-first">
         <div class="container">
+
           <div class="index-first__bg">
+
             <div class="index-first__swiper swiper-container">
               <a href="#" class="index-first__gallery-btn">
                 Галерея
@@ -99,6 +101,7 @@
 
 
           </div>
+
         </div>
       </section>
 
@@ -368,67 +371,82 @@
         </div>
       </section>
 
-      <!-- <section class="order">
+      <section class="order">
         <div class="container">
-          <div class="order__wrapper">
-            <picture class="order__pic">
-              <source type='image/webp' srcset='img/order-bg.webp'>
-              <img width='1460' height='522' src='img/order-bg.png' alt='img'>
-            </picture>
-            <ul class="order__content">
-              <li class="order__logo">
+          <div class="order__bg">
+            <div class="order__picture-bg">
 
+              <div class="order__content">
+                <div class="order__logo">
                   <picture>
                     <source type='image/webp' srcset='img/logo.webp'>
-                    <img width='526' height='186' src='img/logo.png' alt='img'>
+                    <img width='526' height='186' src='img/logo.png' alt=''>
                   </picture>
+                </div>
+                <h2 class="order__title">
+                  Мебель для вас <br>
+                 <span>Как для себя</span>
+                </h2>
+              </div>
+            </div>
 
-              </li>
-
-              <li class="order__title">
-                <span>Мебель для вас</span> <br>
-                <span>Как для себя</span>
-              </li>
-
-            </ul>
-
-            <div class="order__btn-inner">
-              <button class="order__btn-count">
-                <svg width='48' height='35'>
+            <div class="order__buttons">
+              <button class="order__count-btn">
+                <svg width="49" height="37">
                   <use href='img/sprite/sprite.svg#rulette'></use>
                 </svg>
-                <span>Заказать  просчет</span>
+                Заказать  просчет
               </button>
-              <button class="order__btn-call">
-                <picture>
 
+              <button class="order__call-btn">
+
+                <picture>
                   <source type='image/webp' srcset='img/call-btn.webp'>
-                  <img width='31.5' height='29' src='img/call-btn.png' alt='img'>
+                  <img width="40" height="38" src='img/call-btn.png' alt='img'>
                 </picture>
-                <span>Позвонить</span>
+
+                Позвонить
               </button>
             </div>
+
+
+
+
+
           </div>
+
         </div>
       </section>
 
-      <section class="count">
+       <section class="count">
         <div class="container">
           <div class="count__wrapper">
             <div class="count__left">
-              <picture class="count__img4">
-                <source type='image/webp' srcset='img/img4.webp'>
-                <img width='575' height='450' src='img/img4.png' alt='img'>
-              </picture>
-              <picture class="count__img5">
-                <source type='image/webp' srcset='img/img5.webp'>
-                <img width='236' height='371' src='img/img5.png' alt='img'>
-              </picture>
-              <picture class="count__img6">
-                <source type='image/webp' srcset='img/img6.webp'>
-                <img width='314' height='362' src='img/img6.png' alt='img'>
-              </picture>
-            </div>
+
+              <ul class="count__list-pic">
+                <li class="count__item-pic">
+                  <picture>
+                    <source type='image/webp' srcset='img/img4.webp'>
+                    <img width='575' height='450' src='img/img4.png' alt='img'>
+                  </picture>
+                </li>
+                <li class="count__item-pic">
+                  <picture>
+                    <source type='image/webp' srcset='img/img5.webp'>
+                    <img width='236' height='371' src='img/img5.png' alt='img'>
+                  </picture>
+                </li>
+                <li class="count__item-pic">
+                  <picture>
+                    <source type='image/webp' srcset='img/img6.webp'>
+                    <img width='314' height='362' src='img/img6.png' alt='img'>
+                  </picture>
+                </li>
+              </ul>
+
+          </div>
+
+
             <div class="count__right">
               <h2 class="count__form-title main-top">
                 Заказать просчет
@@ -444,32 +462,59 @@
                     <input type="number" placeholder="Телефон    +38 ( __ __ ) __  __  __ __  __  __  __" required>
                   </fieldset>
 
-                  <fieldset class="count__form-fieldset count__form-textarea">
-                    <textarea  name="#" placeholder="Пожелание к заказу"></textarea>
-                  </fieldset>
+
+                  <textarea class="count__form-textarea" name="#" placeholder="Пожелание к заказу"></textarea>
                 </div>
 
                 <div class="count__selector-wrapper">
-                  <select name="height" class="count__selector-height">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
 
-                  <select name="width" class="count__selector-width">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
+                  <div class='select'>
+                      <div class='select__header'>
+                        <span class='select__current'>Высота</span>
+                        <div class='select__icon'>
+                          <svg width='23' height='16'>
+                            <use href='img/sprite/sprite.svg#select-arrow'></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <!-- <div class='select__body'>
+                        <ul class='select__wrapp'>
+                          <li class='select__item' data-choice='choosen'>Все</li>
+                        </ul>
+                      </div> -->
+                    </div>
 
-                  <select name="lenght" class="count__selector-lenght">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
+                  <div class='select'>
+                        <div class='select__header'>
+                          <span class='select__current'>Ширина</span>
+                          <div class='select__icon'>
+                            <svg width='23' height='16'>
+                              <use href='img/sprite/sprite.svg#select-arrow'></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <!-- <div class='select__body'>
+                          <ul class='select__wrapp'>
+                            <li class='select__item' data-choice='choosen'>Все</li>
+                          </ul>
+                        </div> -->
+                      </div>
+
+                  <div class='select'>
+                          <div class='select__header'>
+                            <span class='select__current'>Длина</span>
+                            <div class='select__icon'>
+                              <svg width='23' height='16'>
+                                <use href='img/sprite/sprite.svg#select-arrow'></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <!-- <div class='select__body'>
+                            <ul class='select__wrapp'>
+                              <li class='select__item' data-choice='choosen'>Все</li>
+                            </ul>
+                          </div> -->
+                        </div>
                 </div>
 
 
@@ -479,7 +524,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <!--<section class="services">
         <div class="container">
           <h2 class="services__title main-top">
             Комплекс услуг :
@@ -690,6 +735,14 @@
         </div>
       </section> -->
 
+
+      <button href="#" class="callback-btn">
+        <picture>
+
+          <source type='image/webp' srcset='img/callback.webp'>
+          <img width='100' height='100' src='img/callback.png' alt=''>
+        </picture>
+      </button>
 
 
     </main>

@@ -1,0 +1,39 @@
+.select {
+
+  width: 128px;
+
+  &__header {
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+    grid-gap: 15px;
+
+
+    height: 45px;
+
+
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px #FFFFFF;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: var(--color-d);
+
+  }
+
+
+
+  &__body {
+    display: none;
+
+  }
+
+}
