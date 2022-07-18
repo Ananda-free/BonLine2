@@ -41,16 +41,24 @@ footer {
     grid-gap: 25px;
     position: relative;
 
-    &:before {
+    &-btn {
       position: absolute;
-      content: "";
-      background-image: url(../img/sprite/call-btn.svg);
       width: 40px;
       height: 38px;
-      top: 43px;
-      left: -50px;
+      top: 38px;
+      left: -55px;
     }
+  }
 
+  &__social {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 25px;
 
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      grid-gap: 30px;
+    }
   }
 }
