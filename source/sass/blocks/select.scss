@@ -1,39 +1,130 @@
 .select {
+  position: relative;
+  margin-bottom: 15px;
 
-  width: 128px;
+  // max-width: 130px;
+  // width: 100%;
+}
 
-  &__header {
-    display: none;
-
-    justify-content: center;
-    align-items: center;
-    grid-gap: 15px;
-
-
-    height: 45px;
+.select.active .select__body {
+  height: auto;
+  max-height: 500px;
 
 
+}
 
-    background: #FFFFFF;
-    box-shadow: 0px 0px 4px #FFFFFF;
-    border-radius: 10px;
-    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
-
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-
-    color: var(--color-d);
-
+.select.active {
+  .select__icon {
+    transform: scaleY(-1);
+  }
+  .select__body {
+    display: block;
   }
 
-
-
-  &__body {
-    display: none;
+  .select__header {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 
   }
+}
 
+.select__header {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  min-width: 128px;
+  height: 45px;
+  padding: 0 8px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px #FFFFFF;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+
+  cursor: pointer;
+
+  grid-gap: 8px;
+}
+
+.select__current {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: var(--bg-color-b);
+}
+
+.select__icon {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 13px;
+  height: 6px;
+
+  text-align: center;
+
+  transition: all 0.4s;
+}
+
+.select__body {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 5;
+
+  display: none;
+  width: 100%;
+  max-height: 0;
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+
+  border-top: none;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.select__item {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  font-family: var(--font-family);
+  color: var(--color-a);
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+
+  cursor: pointer;
+  opacity: 0.5;
+
+  transition: all 0.4s;
+
+  user-select: none;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.select__wrapp {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px 0 10px;
+
+  background: var(--color-d);
+  border: 1px solid  var(--color-e);
+
+  grid-gap: 8px;
+}
+
+.select__item:hover {
+  // background-color: $color--a;
+  color: #ffffff;
 }

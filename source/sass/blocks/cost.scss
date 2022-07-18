@@ -52,30 +52,3 @@
 
 }
 
-.select {
-  display: flex;
-  margin: 0 auto;
-
-  width: 760px;
-  height: 88px;
-
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-
-  color: #6D6B67;
-
-  background: #FFFFFF;
-  border-radius: 10px;
-
-  &__header {
-
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-    padding: 28px 0px 28px 28px;
-  }
-}

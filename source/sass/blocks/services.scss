@@ -7,6 +7,8 @@
     background: linear-gradient(360deg, rgba(122, 110, 87, 0.8) -12.02%, rgba(194, 183, 160, 0.8) 43.33%, rgba(240, 230, 211, 0.8) 108.74%);
     border-radius: 10px;
 
+    padding: 23px 33px;
+
   }
 
   &__title {
@@ -22,35 +24,39 @@
 
   &__list {
     display: flex;
+
     flex-direction: column;
     grid-gap: 14px;
-    padding: 25px 30px;
+
+
+
 
 
   }
 
-  &__item-odd {
-    display: flex;
-    justify-content: space-between;
+
+
+  &__item{
+    display: grid;
+    grid-template-columns: minmax(120px, 290px) 898px;
+    justify-content: end;
     align-items: center;
 
-
-
-  }
-
-  &__item-even {
-    display: flex;
-
-   align-items: center;
+    &:nth-child(even) {
+      grid-template-columns: minmax(120px, 898px) minmax(180px, 200px) 150px;
+      justify-content: start;
+      grid-gap: 95px;
+    }
   }
 
   &__name {
-    margin-left: 200px;
+
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
+    text-align: left;
 
     color: var(--color-a);
   }
@@ -59,16 +65,19 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    width: 898px;
+
+
+    width:  898px;
+
     height: 162px;
-    padding: 45px 55px;
+
 
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 37px;
-    /* identical to box height */
+
 
 
     color: var(--color-b);

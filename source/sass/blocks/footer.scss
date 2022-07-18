@@ -1,0 +1,56 @@
+footer {
+  background-color: var(--bg-color-f);
+  width: 100%;
+  min-height: 314px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer {
+
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: var(--color-a);
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+
+  }
+
+  &__contacts {
+
+    display: flex;
+    flex-direction: column;
+    grid-gap: 25px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      background-image: url(../img/sprite/call-btn.svg);
+      width: 40px;
+      height: 38px;
+      top: 43px;
+      left: -50px;
+    }
+
+
+  }
+}

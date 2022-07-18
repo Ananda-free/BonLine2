@@ -1,0 +1,22 @@
+.list {
+
+
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+
+    &:nth-child(5) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+  }
+
+}
+
+
+
