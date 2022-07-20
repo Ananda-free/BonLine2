@@ -3,8 +3,9 @@
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 49px;
+  font-size: clamp(30px, 2.778vw, 40px);
+  line-height:100%;
+  text-align: center;
   /* identical to box height */
 
 

@@ -24,13 +24,11 @@
 
   &__list {
     display: flex;
+    justify-content: space-between;
+
 
     flex-direction: column;
     grid-gap: 14px;
-
-
-
-
 
   }
 
@@ -42,10 +40,25 @@
     justify-content: end;
     align-items: center;
 
+    &:nth-child(3n+3) {
+
+      div {
+      background: #DAD4C8;
+    }
+  }
     &:nth-child(even) {
       grid-template-columns: minmax(120px, 898px) minmax(180px, 200px) 150px;
       justify-content: start;
       grid-gap: 95px;
+
+      svg {
+       fill:transparent;
+       justify-content: flex-end;
+      }
+
+      span {
+        text-align: center;
+      }
     }
   }
 
@@ -66,6 +79,8 @@
     justify-content: center;
     align-items:center;
 
+    padding: 50px;
+
 
     width:  898px;
 
@@ -84,5 +99,9 @@
 
     background: rgba(255, 255, 255, 0.51);
     border-radius: 10px;
+
+
   }
 }
+
+
