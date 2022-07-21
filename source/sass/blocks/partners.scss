@@ -89,7 +89,7 @@
       justify-content: center;
       align-items:center;
 
-      margin-right: 140px;
+      margin-right: 135px;
     }
 
     &-text {
@@ -98,8 +98,8 @@
       font-family: var(--font-family);
       font-style: normal;
       font-weight: 600;
-      font-size: 30px;
-      line-height: 37px;
+      font-size: clamp(20px, 2.083vw, 30px);
+      line-height: 100%;
       text-align: center;
 
       color: var(--color-a);
