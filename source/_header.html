@@ -1,69 +1,61 @@
 <header>
-  <div class="container">
+
     <div class="header">
+      <div class="container">
+        <div class="header__wrapper">
 
+          <div class="header__left">
+            <div class="header__logo">
+              <picture>
+                <source type='image/webp' srcset='img/logo-head.webp'>
+                <img width='223' height='106' src='img/logo-head.png' alt='logo'>
+              </picture>
+            </div>
 
-        <a class="header__logo" href="index.html">
-          <svg width='223' height='106'>
-           <use href='img/sprite/sprite.svg#logo3'></use>
-          </svg>
+              <form action="" class="header__search">
+                <input type="search" placeholder="Поиск">
+                <button>
+                  <svg width='29' height='29'>
+                    <use href='img/sprite/sprite.svg#search'></use>
+                  </svg>
+                </button>
+              </form>
+             </div>
 
-        </a>
+          <div class="header__right">
+            <div class="header__tel">
+              <a href="tel:+380661338882" class="header__tel-link">
+                <svg  width="40" height="38">
+                  <use href='img/sprite/sprite.svg#call'></use>
+                </svg>
+                <span>+38066 13 38 882</span></a>
+            </div>
 
+            <div class="header__social">
+              <a href="#" class="header__social-instagram">
+                <svg width='38' height='38'>
+                  <use href='img/sprite/sprite.svg#instagram'></use>
+                </svg>
+              </a>
 
+              <a href="#" class="header__social-facebook">
+                <svg width='38' height='38'>
+                  <use href='img/sprite/sprite.svg#facebook'></use>
+                </svg>
+              </a>
 
-            <form action="#" class="search-form">
-              <fieldset class="search-form__wrapper">
+            </div>
 
-                  <button class="search-btn">
-                    <svg width='28' height='28'>
-                      <use href='img/sprite/sprite.svg#search'></use>
-                    </svg>
-                  </button>
-                  <input type="text" class="search-form__input" name="search" placeholder="Поиск">
-
-              </fieldset>
-            </form>
-
-
-
-        <div class="header-tel">
-          <a href="tel:+380661338882" class="header-tel__link">
-            <span class="header-tel__icon">
-                <img class="icon-svg" width="40" height="38" src="img/sprite/call.svg" alt="icon">
-            </span>
-            <span class="header-tel__number">
-              +38066 13 38 882
-            </span>
-        </a>
-
+            <div class="header__menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
 
         </div>
 
-        <div class="header-social">
-
-
-            <a href="#" class="header-social__icon">
-              <img class="icon-svg" width="36" height="36" src="img/sprite/instagram.svg" alt="icon">
-            </a>
-
-            <a href="#" class="header-social__icon">
-              <img class="icon-svg" width="36" height="36" src="img/sprite/facebook.svg" alt="icon">
-            </a>
-
-
-        </div>
-
-        <button class="header-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      <!-- </div1> -->
-
-
-
-
+      </div>
     </div>
-  </div>
+
 </header>

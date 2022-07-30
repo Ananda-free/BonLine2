@@ -1,18 +1,15 @@
 .delivery {
-  margin-bottom: 55px;
-
-
-
-
+  margin-bottom: clamp(30px, 3.819vw, 55px);
+  background-color: #fbfafa;
   &__wrapper {
-    padding-top: 100px;
+    padding-top: clamp(40px, 6.944vw, 100px);
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 68px;
     display: grid;
     grid-template-columns: .8fr 1fr .6fr;
     grid-gap: 20px;
-    // grid-template-columns: repeat(3, 1fr);
+
     justify-items: center;
 
     background-color: #fbfafa;
@@ -33,7 +30,7 @@
   &__img-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 70px;
+    margin-bottom: clamp(30px, 4.861vw, 70px);
     max-width: 100%;
     height: clamp(150px, 15.278vw, 220px);
 

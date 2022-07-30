@@ -8,7 +8,7 @@
   }
 
   &__wrapper {
-    padding: 90px 150px;
+    padding: clamp(30px, 6.25vw, 90px) clamp(10px, 10.417vw, 150px);
 
     border-radius: 10px;
 
@@ -17,9 +17,9 @@
     background-repeat:no-repeat;
     background-size:cover;
 
-    max-width: 1480px;
+
     width: 100%;
-    height: 1486px;
+
     height: 100%;
 
     position: relative;
@@ -39,7 +39,7 @@
   }
 
   &__inner {
-    padding: 45px 160px 90px;
+    padding: clamp(25px, 3.125vw, 45px) clamp(20px, 11.111vw, 160px) clamp(60px, 6.25vw, 90px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,6 +71,7 @@
   }
 
   &__list {
+
     display: flex;
     flex-direction: column;
     grid-gap: 32px;
@@ -80,12 +81,16 @@
 
   &__select {
 
+
+
     &-header {
       display: flex;
       justify-content: space-between;
       padding: 30px 28px;
-      width: 760px;
-      height: 88px;
+      width: clamp(200px, 52.778vw, 706px);
+      height: clamp(44px, 6.111vw, 88px);
+      // width: 100%;
+      height: clamp(40px, 6.111vw, 88px);
 
       background: var(--color-a);
       border-radius: 10px;
@@ -97,7 +102,7 @@
       font-family: var(--font-family);
       font-style: normal;
       font-weight: 500;
-      font-size: 25px;
+      font-size: clamp(20px, 1.736vw, 25px);
       line-height: 30px;
 
       color: var(--color-b);
@@ -105,8 +110,8 @@
     }
 
     &-icon {
-      width: 42px;
-      height: 32px;
+      width: clamp(21px, 2.917vw, 42px);
+      height: clamp(16px, 2.222vw, 32px);
 
     }
 
@@ -119,9 +124,9 @@
     }
 
     &-item {
-      padding: 30px 28px;
-      width: 760px;
-      height: 88px;
+      padding: clamp(15px, 2.083vw, 30px) clamp(14px, 1.944vw, 28px);
+      // width: 100%;
+      height: clamp(44px, 6.111vw, 88px);
 
       background: var(--color-a);
       border-radius: 10px;
@@ -140,9 +145,13 @@
 
 
     &-fieldset {
+      display: flex;
+      justify-content: center;
+      align-items:center;
+
       padding: 30px 28px;
-      width: 760px;
-      height: 88px;
+      width: clamp(200px, 52.778vw, 706px);
+      height: clamp(44px, 6.111vw, 88px);
 
       background: var(--color-a);
       border-radius: 10px;
@@ -169,7 +178,7 @@
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: clamp(20px, 1.736vw, 25px);
     line-height: 30px;
 
     color: var(--color-a);
@@ -181,8 +190,9 @@
 
     border-radius: 10px;
 
-    width: 412px;
-    height: 93px;
+    width: clamp(180px, 28.611vw, 412px);
+    height: clamp(40px, 6.458vw, 93px);
+
   }
 
 }

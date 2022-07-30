@@ -8,21 +8,25 @@
     max-width: 100%;
     height: Min(71.25vw,1026px);
 
+
+
     background: linear-gradient(360deg, rgba(203, 198, 187, 0.6) 0.02%, rgba(255, 255, 255, 0) 172.69%);
   }
 
 
-
-
-
   &__swiper {
     position: relative;
-    padding-top: clamp(40px, 8.681vw, 125px);
-
+    padding-top: clamp(30px, 8.681vw, 125px);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   &__item {
-    min-height: Min(53.125vw, 765px);
+
+
+
+   height: Min(53.125vw, 765px);
     background-position: center center;
     background-repeat:no-repeat;
     background-size: cover;
@@ -45,7 +49,7 @@
   &-descr {
     position: relative;
     z-index: 1;
-    margin: clamp(30px, 7.292vw, 105px)  0 clamp(30px, 7.292vw, 105px)  clamp(20px, 4.167vw, 60px);
+    margin: clamp(10px, 7.292vw, 105px)  0 clamp(10px, 7.292vw, 105px)  clamp(20px, 4.167vw, 60px);
 
     width: Min(51.736vw, 745px);
     height: Min(38.403vw, 553px);
